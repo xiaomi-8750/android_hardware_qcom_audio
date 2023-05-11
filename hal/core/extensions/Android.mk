@@ -15,6 +15,7 @@ LOCAL_SRC_FILES := \
     AudioExtension.cpp
 
 LOCAL_HEADER_LIBRARIES :=  \
+    libarpal_headers \
     libaudioclient_headers \
     libmedia_helper_headers \
     libexpectedutils_headers
@@ -84,6 +85,7 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 LOCAL_HEADER_LIBRARIES += libsystem_headers
+LOCAL_HEADER_LIBRARIES += libarpal_headers
 include $(BUILD_SHARED_LIBRARY)
 
 #-------------------------------------------
@@ -123,6 +125,7 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 LOCAL_HEADER_LIBRARIES += libsystem_headers
+LOCAL_HEADER_LIBRARIES += libarpal_headers
 include $(BUILD_SHARED_LIBRARY)
 
 #-------------------------------------------
