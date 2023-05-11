@@ -38,6 +38,7 @@ cc_library_shared {
     local_include_dirs: ["include"],
 
     header_libs: [
+        "libarpal_headers",
         "libaudio_system_headers",
         "libaudioclient_headers",
         "libaudioeffects",
@@ -104,6 +105,7 @@ cc_library_static {
     ],
 
     header_libs: [
+        "libarpal_headers",
         "libaudioclient_headers",
         "libexpectedutils_headers",
         "libmedia_helper_headers",
@@ -151,6 +153,10 @@ cc_library_static {
     local_include_dirs: [
         "platform/include",
         "extensions/include",
+    ],
+
+    header_libs: [
+        "libarpal_headers",
     ],
 
     shared_libs: [
